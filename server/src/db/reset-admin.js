@@ -15,7 +15,7 @@ async function resetAdmin() {
     console.log('🔧 Resetting admin password...');
 
     try {
-        // Hash the password: kiot@168
+        // Hash the password: kiot@168 --
         const salt = await bcrypt.genSalt(10);
         const passwordHash = await bcrypt.hash('kiot@168', salt);
 
