@@ -1,5 +1,22 @@
 /* Dashboard.css - Industrial Clean (Dark Theme) */
 
+/* Sticky Table Headers */
+table {
+    position: relative;
+}
+
+thead {
+    position: sticky;
+    top: 60px;
+    /* Account for fixed header */
+    z-index: 10;
+    background: var(--bg-secondary);
+}
+
+thead th {
+    background: var(--bg-secondary);
+}
+
 /* Dashboard Layout */
 .dashboard {
     width: 100%;

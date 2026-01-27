@@ -37,10 +37,10 @@ export default function Layout() {
                 {/* Desktop Navigation */}
                 <nav className="header-nav desktop-nav">
                     <NavLink to="/dashboard" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                        📋 Dashboard
+                        🏠 Home
                     </NavLink>
                     <NavLink to="/progress" className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}>
-                        📊 Progress
+                        📜 History
                     </NavLink>
                 </nav>
 
@@ -87,14 +87,14 @@ export default function Layout() {
                         className={({ isActive }) => isActive ? 'mobile-nav-link active' : 'mobile-nav-link'}
                         onClick={closeMobileMenu}
                     >
-                        📋 Dashboard
+                        🏠 Home
                     </NavLink>
                     <NavLink
                         to="/progress"
                         className={({ isActive }) => isActive ? 'mobile-nav-link active' : 'mobile-nav-link'}
                         onClick={closeMobileMenu}
                     >
-                        📊 Progress
+                        📜 History
                     </NavLink>
                 </nav>
                 <div className="mobile-menu-footer">
